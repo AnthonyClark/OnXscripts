@@ -1,6 +1,8 @@
 //// Author: Anthony Clark
 //// Created: 2013-02-14
 ////
+//// Idea from a similar script which I can't find any more to credit it. Will keep looking.
+////
 //// This script allows for contacts to find my location by text.
 //
 // How does it work?
