@@ -2,6 +2,13 @@
 //// Created: 2013-02-14
 ////
 //// This script allows for contacts to find my location by text.
+//
+// How does it work?
+// This script places an event handler on incoming text messages and will check for two
+// conditions. If the text is from a number matching a contact on the phone and it also
+// matches (no case sensitivity) the messageText then the phones location will be sent
+// as a reply in the form of a google maps url.
+//
 
 // Initializing variables 
 var messageText = "where?";
