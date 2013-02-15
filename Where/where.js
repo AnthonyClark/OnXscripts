@@ -41,13 +41,15 @@ device.messaging.on('smsReceived', function (sms) {
 				function (err) {
 					if (err) {
 						console.error('Error sending text message: ' + JSON.stringify(err));
+					} else {
+						console.log('Successfully sent location to: '+sms.data.from);
 					}
 				}
 			);
 		});
 		locListener.start();
-	} else {
-		console.log('Text not from a contact, number: ' + sms.data.from);
+	} else if (sms.data.body.toLowerCase() === messageText.toLowerCase()) {
+		console.log('Request for location from a non contact, number: ' + sms.data.from);
 	}
 });
 
